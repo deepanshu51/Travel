@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.services,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services {
+  background-image: url('/images/img-1234.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f49292;
+  font-size: 100px;
+}
+
+.products {
+  background-image: url('/images/img-123.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #e56b6b;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('/images/img-12345.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-left: 5px;
+  overflow: hidden;
+  background-color: rgb(232, 247, 243);
+}
+
+.top-images,
+.bottom-images {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  padding-left: 30px;
+}
+
+.image-container img {
+  border-radius: 10px;
+  height: 50vh;
+  width: 75vh;
+}
+
+.image-container img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+  /* position: absolute; */
+} 
+
+
+
+.tex{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #b393d3;
+    background-color: rgb(236, 250, 245);
+  }
+  
+  .tex p:hover {
+    font-variation-settings: "wght" 100; 
+    letter-spacing: -1.42px;
+  }
+
+
+  .xt{
+    background-color: #e6e1e1;
+    width: 75vh;
+    border-radius: 10px;
+  }
+
+  /* header h1 {
+    
+                 1px 10px 5px rgba(16, 16, 16, 0.5),
+                 1px 15px 10px rgba(16, 16, 16, 0.4),
+                 1px 20px 30px rgba(16, 16, 16, 0.3),
+                 1px 25px 50px rgba(16, 16, 16, 0.2);
+  } */
+
+
+  
+  @media only screen and (max-width: 1024px) {
+    .top-images {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+    .bottom-images {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  }
